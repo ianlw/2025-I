@@ -1,0 +1,244 @@
+Bioinformática: 
+- SE encarga de crear bases de datos de información biológica
+
+ADN: Macromolécula, contiene la información genética de seres vivos
+Bases nitrogenadas:
+- Adenina
+- Timina
+- Guanina
+- Citosina 
+información genética: caracteristicas de individuos
+
+ARN: ácido nucleico de cadena sencilla:
+Bases nitrogenadas:
+- Adenina
+- Uracilo
+- Giuanina
+- Citosina
+
+Funciones del ADN
+- Almacenar información genética
+- Transmitir información genética
+
+*Uniones posibles _AND_* A-T C-G
+
+*Uniones posibles _RND_* A-U C-G
+
+Tipos de ARN
+- ARNm: Papel principal en la sísntesis de proteínas
+- ARNr
+- ARNt
+
+Proteínas: moléculas de enorme tamaño formados por aminoácidos
+Aminoácidos: unidad básica de las proteínas
+Fucnioens proteinas:
+metabbolicas - insulina
+fisicas, colageno en la piel
+regula nieveles de axucar en sangre 
+transporte de hrmoglibina
+
+Gen: Trozo de ADN, fabrica proteína, porción de cromosoma
+
+Genoma: collección completa de ácido desoxirribonucleico ADN conjunto de todos los genes de un organismo
+Genómica: colección completa de genoma
+
+Secuencia de ADN: sucesión de Nucleótidos (A, c, G, T) 
+
+Nucleótido = base nitrogenada + azucar + fosfato
+
+Estructura tridimensional de una proteína: 
+- primaria
+- secuencia
+- terciaria
+- cuaternaria
+
+*Fabricación de proteínas*
+1. Transcipción
+ADN -> ARNm
+
+2. Empalme
+Eliminar intrones, Conservar Exones
+
+3. Traducción
+Se unen los aminoácidos codificados por en ARNm
+
+Archivo FASTA
+Almacena secuencias de 
+
+Mutaciones:
+Eliminación
+Inserción
+Sustitución
+Translocación
+de ADn y nucleítudos:
+
+
+
+Mutaciones Neutras:
+cambio de una proteina con otra pot ptopirdades similkares
+
+Perjudiciales:
+Originan enfermedades o malformaciones
+
+Benficiosas: 
+Efectos positivos y dan ventaja a los organinsmos que presentan dicha modificación
+es importante para la evolución.
+
+Aplicaciones de la bioinformática:
+Genómica: Ciencia que estudia el genoma y de igual forma aspectos de los genes como la estructura, funcionamiento y evolución.
+Transcriptómica: Transferencia genima a proteína
+Proteómica Estudio de Proteínas
+Metabolismo: Procesis físico- químicos como la respiración, etc.
+Genómica Comparativa: Compara genimas de varios individuos, especies.
+Genómica Comparativa: Compara genimas de vatios indiviuos, especies.
+Genómica Funcional: Estudio la función del gen de varios individuos, especies.
+Análisis Filigenéticos: Trata acerca de loa ásboles basados en la genética de las especies.
+ 
+* Secuenciación
+A cortar secuencuas en pequeños fragmentos para determinar con algun procedimiento bioquimico cual es el nucleotido
+Técnicas actuales: Proxima Generación (NGS)
+
+** Secuenciaci+on por síntesis
+   Determina la secuencia de nucleotidos en tiempo real, segun se añaden a la reaccion :
+*** Roche 454
+    basadi en Deteccipon de luz liberada -> pirosecuenciación
+*** Illumina
+    Detección de fluorecencia de un determinado color
+** Secuenciacipon por ligación
+   Determinación en tienpo real de sovletes de nucleotidos que se complementan con dobletes de nuclotidos de una hebra molde de ADN y que a continuacion se ligan a la hebra naciente. usa fluorecencia de distinas longitudes de onda
+** Cosas
+   para Secuencuaiar RNA se retritransscribe a ADN
+** Las tecnicas mas utilizadas implican trocear al ADN en fragmentos pequeños
+** Implica una marca de inicio y fin de los trozos
+   Secuecnia y calidad -> FastQ
+** Reto: ensamblar fragmentos pequeñños fragmentos secuenciados  que nunca se han secuenciado
+** Secuenciacion en Paralelo /NGS
+   - Fragmentación y seleccion de tramaño de ADN
+   - Ligación de adaptadores en los extremos
+   - Clonación masiva en la superficie
+   - Secuenciacón por sintesis de cada fragmento en paralelo
+** Secuenciadores
+*** 3° Generación
+    - MiniOn
+** Formatos
+*** Multipropositos
+    - Fasta
+    - GenBank/
+      -XML
+    - Nexus
+*** Alineamiento y filogenia
+    - Phylip
+    - PhyloXML
+    Next Generation Sequencing: FastQ, SRA
+    Estructuras: PDB
+
+* Formatos
+** Fasta
+   Secuencias del ADN, ARn y proteínas
+   Los ácidos nucleicos -> ACGT - U
+   - Una secuecnia de polipéptido se presenta en 20 caracteres en letras mayusculas
+     Fasta comienza con el signo '>' y luego la descripcion y luego en una nueva linea la secuencia con 80 caracteres por linea
+** GenBank
+   Mas informcion que fasta, secuencu¿ia de caractees poir linea de 60, dividios en 10 grupo, le tras minusculas, extencion .gb
+   tiene diferentes campos 
+** FastQ
+   Incluye el parametri de la calidad de secuenciacion de cada nucleotido (valor de probabilidad que sea correcta)
+   - Cabecera, que empieza con @
+   - Secuencia de nucleótidos.
+    - “+” , opcionalmente seguido de alguna descripción.
+    - Valores de calidad de secuencia (para cada nucleótido) en
+código ASCII .
+tiene 94 valores diferentes de calidad en el rango de 33 a 126 de la tabla de vaoreles ascii
+   ▪ Calidad baja: 0-20
+▪ Calidad media: 20-28
+      ▪ Calidad alta: 28-34
+* Bases de datos biológicas
+• Genes
+• Nucleótidos
+• Proteínas
+• Estructura de proteínas
+• Genomas
+• Bibliografía
+• Taxonomía
+• Metabolismo
+• Herramientas de análisis de datos
+  • Herramientas para manejar y recuperar información.
+  Pricipales bases de datos:
+  - Ncbi- National Center for Biotechnology Information 
+  - EMBL - European laboratory of molecular of biology
+** Basese de datos especializadas
+   1. Bibliografía:
+– PubMed (Acceso a bases de datos bibliográficas del NLM (National
+Library of Medicine), como MEDLINE y PreMEDLINE
+
+2. Especies concretas:
+– TAIR (planta Arabidopsis)
+– SGD (levadura Saccharomyces)
+– Flybase (mosca Drosophila)
+3. Secuencia de nucleotidos:
+– GenBank (Base de datos de secuencias genéticas de los NIH (National
+Institutes of Health, Estados Unidos)
+– DDBJ (DNA Data Bank of Japan)
+4. Proteínas
+– Uniprot (Universal Protein Resource)
+   – PDB (Pakistán Data Base)
+*** NCBI
+    La base de datos de NCBI se puede encontrar:
+• Gene: Es la base de datos para genes del NCBI. Incluye los
+genes que han sido completamente secuenciados.
+• Genome: Información de genomas sobre la que se pueden
+hacer búsquedas a partir de secuencias de nucleótidos
+• Nucleotide: Reúne información de otras tres bases de datos:
+GenBank, EMBI y DDBJ.
+• Popset: Contiene conjuntos de secuencias alineadas que son
+el resultado de estudios de mutaciones, poblacionales o
+filogenéticos (evolutivos).
+• Proteins: Contiene secuencias de aminoácidos y traducciones
+    de secuencias nucleotídicas de EMBL y DDBJ.
+•PubMed: Servicio de la NLM, de Estados Unidos, que incluye
+más de 16 millones de citas de revistas científicas sobre
+ciencias de la vida, como las incluidas en MEDLINE.
+• SNP: Contiene datos sobre variaciones de nucleótidos
+individuales en el genoma humano. En colaboración con el
+Instituto Nacional de Investigación del Genoma Humano, el
+Instituto Nacional de Información sobre Biotecnología
+(National Human Genome Research Institute) ha establecido
+la base de datos dbSNP como repositorio central.
+• Structure: La Base de Datos de Modelado Molecular (MMDB)
+contiene datos y herramientas para determinación de
+estructuras y dimensiones de biomoléculas a partir de
+    información del Protein Data Bank
+• Taxonomy: Contiene los nombres de todos los organismos
+que están representados, al menos por una secuencia de
+ácido nucleico o proteína, en las bases de datos de secuencias
+    del NCBI.
+
+* Algoritmos de busquedas
+    ** Búsqueda exacta
+       -  Boyer Moore
+          busca un patron dentro de un texto usando 2 reglas u¿inteligentes: 
+        - D1(huristica del subfijo malo)
+       - D2(huristica del subfijo bueno)
+         esas reglas se guardan en tablas
+** Similitud o búsqueda aproximada
+   - Similaridad: permite busqueda de patrones de errores
+   - Funcion de Distancia: error obtenido al comparar 2 cadenas
+   - Distanca difrencias de dos cadenas comparadas
+   **- Propiedades: 
+            - Distancia () = 0 ....
+*** Edición o sustitución
+    - Levenshtein
+    - Hamming
+*** Sub-secuencias (fragmentos)
+    - N-gramas
+      • K-mers: recoje una secuencia y captura cada subsecuencia de longitud k
+** Distancaias
+*** Hamming
+    Si las cadenas no son del mismo tamaño se rellena al final de la cadena menor
+    Se aplica la comparacion de caracter a caracter, si son diferentes entonces es 1 y si son iguales es 0.
+    y luego se suman esos valores para calcular el valor de Hamming
+*** Levenshtein
+
+
+Primera generacion
+

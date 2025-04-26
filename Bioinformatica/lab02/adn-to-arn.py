@@ -2,17 +2,21 @@ from Bio import SeqIO
 from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
 
-fasta = "transcripcion_traduccion_02.fasta"
+fasta = "transcripcion_traduccion_01.fasta"
 output_fasta = "secuencia_ARN.fasta"
 
 arn_fasta = []
 
 for _ in SeqIO.parse(fasta, "fasta"):
     print(f"\nID: {_.id}")
-    adn = _.seq
+    adn = _.seq.upper()
     print(f"Secuencia ADN: {adn}")
-    arn = adn.replace('T', 'U')
+    
+    # Transcripción correcta: reemplazo de bases de ADN por ARN
+    arn = adn.replace('A', 'U').replace('T', 'A').replace('C', 'G').replace('G', 'C')
+    
     print(f'Secuencia ARN: {arn}')
+    
     arn_ = SeqRecord(Seq(arn), id=_.id, description="ARN transcrito")
     arn_fasta.append(arn_)
 

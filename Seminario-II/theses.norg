@@ -1,3 +1,19 @@
-- Sistemna de salud integrado
-- sistema de mapa de calor de delincuencia
+❓ Problema General:
 
+    ¿Cómo se puede utilizar una red neuronal convolucional para detectar de manera precisa y automatizada las enfermedades en cultivos de durazno a partir de imágenes, mejorando así la eficiencia del diagnóstico agrícola?
+
+❓ Problemas Específicos:
+
+    ¿Es posible desarrollar un sistema automatizado de visión por computadora capaz de identificar visualmente las principales enfermedades que afectan a las hojas o frutos del duraznero?
+
+    ¿Qué tan preciso puede ser un modelo de red neuronal convolucional entrenado específicamente para clasificar distintas enfermedades en los cultivos de durazno a partir de imágenes?
+
+❓ Problema General:
+
+    ¿Cómo se puede utilizar una red neuronal convolucional para detectar de manera precisa y automatizada las enfermedades en cultivos de durazno a partir de imágenes, mejorando así la eficiencia del diagnóstico agrícola?
+
+❓ Problemas Específicos:
+
+    ¿Es posible desarrollar un sistema automatizado de visión por computadora capaz de identificar visualmente las principales enfermedades que afectan a las hojas o frutos del duraznero?
+
+    ¿Qué tan preciso puede ser un modelo de red neuronal convolucional entrenado específicamente para clasificar distintas enfermedades en los cultivos de durazno a partir de imágenes?
