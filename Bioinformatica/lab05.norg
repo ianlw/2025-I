@@ -1,0 +1,19 @@
+1. ¿Qué es alineamiento de secuencias?
+Se busca detectar las regiones similares entre dos secuencias de proteínas o AND, teniendo una secuencia desconocida y una conocida, al compararlas y encontrar similitudes podemos predecir la estructura y función de la secuencia desconocida.
+
+2. ¿Qué es alineamiento global?
+Se toma en cuenta las secuencias completas añadiendo las gaps en caso de ser necesario. Sirve para el alineamiento de genes homólogos, es decir para el alineamiento de secuencias que comiencen y acaben en la misma región.
+
+3. ¿Qué es alineamiento local?
+Solo se toma en cuenta las partes parecidas y no la totalidad de la secuencia.
+
+4. ¿Cuáles son las características del algoritmo del alineamiento Needleman Wunsch?
+- Empieza a llenar la matriz de puntuación desde la primera columna y la primera fila, pero el primer espacio es completado con cero.
+- Pertenece al alineamiento global.
+- En las puntuaciones participan los elementos de las diagonales, arriba, abajo, gaps y similitud de la tabla de similitud. 
+
+5. ¿Cuáles son las características del algoritmo del alineamiento Smith Waterman?
+- Alineamiento local.
+- Se rellena con ceros la primera fila y columna.
+- En los puntajes se añade el cero como elemento comparador, de modo que en la tabla solo aparescan valores positivos.
+

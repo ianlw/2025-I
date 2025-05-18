@@ -1,0 +1,11 @@
+Inteligencia de negocios, 5 capas:
+~ Capa de fuentes de datos
+~ Capa de Extrac transform Load
+~ Capa almacenes de datos - data warehouse
+~ Capa metadatos
+~ Capa de usuario fina
+  
+  La capa de almacenamiento de datos consta de tres componentes:
+1. el almacén de datos operacional (ODS del inglés Operational Data Store),
+  2. el Data Warehouse (almacén de datos)
+  3. Datamarts
