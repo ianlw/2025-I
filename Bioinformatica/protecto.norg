@@ -1,0 +1,106 @@
+^ Expresión genética
+Se usa la información contenida en el ADN para producir una molécula funcional, puede ser una proteína generalmente
+Expresar un gen es leer la receta y preparan el platillo.
+
+^ Gen diferencialmente expresado
+Su expresión cambia significativamente entre dos condiciones
+Por ejemplo:
++ Comparando entre tejido sano y enfermo se podría ver que el gen X se expresa mucho más en personas enfermas
++ Entonces ese gen es diferencialmente expresado.
+
+^ Es importante por:
+- Encontrar biomarcadores, genes que indican si se tiene o tendrá alguna enfermedad
+- Entender qué está fallando a nivel molecular
+
+Basicamente el /*analisis de expresión genética*/ es detectar que genes están maás o menos activos en diferentes condiciones
+Basicamente los */Genes diferencialmente expresados/ son los genes que muestra diferencias significativas
+
+- Poblemas específicos
+-- Descargar los datasets
+-- Necesitamos asegurarnos que los datos estén limpios y comparables.
+-- Control de calidad detectando outliners mediante la implementación de bloxpots 
++ Tambiénpueden ser los histogramas para ver si todas las muestran tienen una distribución similar
++ También matrix de correlación para ver si las muestras de un mismo grupo se parecen más entre si que con las de otros grupos
+--- Normalizar con z-score para tener a los datos en la misma escala
++ Transforma los datos para que cada gen tenga una emdia de 0 y desviación estandar de 1
++ TAmbién hay Normalización por cuartiles: Para micro array y hacer las muestras comparables
+  + Fuerza que todas las muestras tengan la misma distribución.
++ Log2 Transformation: combierte los valores grandes en pequeños para suavizar los extremos 
+-- Test de Welch para dos grupos, comparar cada gen entre dos grupos.
+-- Implementar visualizaciones heatmap, MA-plot, scatter. Son diferentes graficos:+
+--- Heatmap visualiza los niveles de expresión de los genes más impotayantes en caad muestra
+--- MA-PLOT: Compara el cambio de expresión con la media de expresión.
+--- Volcano: relaciona entre magnitud del cambio y significancia estadística
+
+* Antecedente
+  Se estudia el cancer de pulmon y se enfoca en un tipo de modificación química del ARN, metilación m6A.
+  Entocnes se busca analizar como esta modificación del ADN afecta a la espresión de los genes en tejido sano y enfermo
+  o
+
+
+  Aislaroin el arncon metilizacion usando antocuerpos mediante el proceso de inmunoprecipitacion
+  osea solo tomaron en cuenta o extrayeron solo los fragmentos de ARN con metilizacion
+
+  Para medir la expresión de estos gees (ARN metilano) para ver que genes estan presentes y ver cuanto se expresan, es decir cuan activos estan esos genes en tejifo sano vs cancer+
+
+  Usaron t-testnpareado para encontrar genes diferencialmente expresados
+  Este test estadístico compara dos grupos relacionados, como:
+
+    Tejido sano y tejido con cáncer del mismo paciente.
+
+Sirve para saber si un gen tiene una expresión significativamente diferente entre los dos grupos.
+
+  Resultado: encontraron 5117 genes diferencialmente expresados (DEGs).
+
+5. Usaron Gene Ontology (GO) y KEGG para entender qué hacen esos genes
+
+Estos dos son repositorios de conocimiento biológico.
+🔸 Gene Ontology (GO):
+
+    Dice qué función tiene cada gen.
+
+    Por ejemplo: "este gen ayuda a dividir la célula", "este otro regula la apoptosis (muerte celular)", etc.
+
+🔸 KEGG:
+
+    Dice en qué rutas moleculares participa un gen.
+
+    Por ejemplo:
+
+        Ruta del ciclo celular
+
+        Ruta de la señalización del cáncer
+
+        Ruta de respuesta a virus
+
+  👉 Así pueden entender cómo el cáncer altera funciones y procesos biológicos específicos.
+
+Paso	¿Qué hicieron?	¿Para qué?
+1	Extrajeron ARN con metilación m6A	Estudiar solo ese tipo de ARN
+2	Usaron microarrays	Medir qué genes están activos y cuánto
+3	Aplicaron t-test pareado	Comparar tejido sano vs cáncer
+4	Identificaron genes DEGs	Genes con expresión diferente
+  5	Usaron GO y KEGG	Saber qué hacen esos genes y qué rutas afectan
+
+
+  ✅ ¿Qué es el t-test pareado y cuándo se usa?
+
+El t-test pareado se usa cuando:
+
+    Se tienen dos conjuntos de datos relacionados entre sí, es decir, la misma persona antes y después de algo, o
+
+    Comparas dos condiciones en muestras emparejadas, como tejido sano y tejido con cáncer de la misma persona.
+
+¿Por qué se usa en este estudio?
+
+    Porque tomaron muestras de tejido sano y canceroso de los mismos pacientes, por eso las muestras están emparejadas (pareadas).
+
+✅ ¿Qué es el Test de Welch y cuándo se usa?
+
+El Test de Welch:
+
+    Es una variante del t-test no pareado.
+
+    Se usa cuando tienes dos grupos independientes y sus varianzas son diferentes (no homogéneas).
+
+  Ejemplo: comparar datos de dos grupos de pacientes distintos, no relacionados entre sí.
